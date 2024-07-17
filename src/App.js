@@ -2,12 +2,35 @@ import React from "react";
 import Weather from "./Weather";
 import "./App.css";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      Weather App
+      <div className="container">
+        <Weather defaultCity="Johannesburg" />
+        <h1>Weather App </h1>
+        <footer>
+          This project is coded by{" "}
+          <a
+            href="https://github.com/KatlegoM02"
+            target="_blank"
+            rel="noopener noreferrer"
+          ></a>
+          Katlego Makgatle and is{" "}
+          <a href="https://github.com/KatlegoM02/reactapp" target="_blaank">
+            open-sourced on GitHub{" "}
+          </a>{" "}
+          and{" "}
+          <a
+            href="https://reactapp-fkyu.onrender.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            hosted on Render
+          </a>
+        </footer>
+      </div>
     </div>
   );
 }
 
-export default App;
+
