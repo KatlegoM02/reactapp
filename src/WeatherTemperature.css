@@ -1,0 +1,23 @@
+.WeatherTemperature {
+  font-size: 19px;
+}
+
+.unit {
+  font-size: 19px;
+}
+
+.unit-button {
+  background: none;
+  border: none;
+  color: blue;
+  cursor: pointer;
+  font-size: 19px;
+  padding: 0;
+  margin: 0 5px;
+}
+
+.unit-button:hover,
+.unit-button:focus {
+  text-decoration: underline;
+  outline: none;
+}

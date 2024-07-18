@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import WeatherInfo from "./WeatherInfo";
+import WeatherForecast from "./WeatherForecast";
 import axios from "axios";
 import "./Weather.css";
 
@@ -70,7 +71,7 @@ export default function Weather(props) {
         {/* Display the weather information */}
         <WeatherInfo data={weatherData} />
         {/* Display the weather forecast based on the coordinates */}
-        
+        <WeatherForecast coordinates={weatherData.coordinates} />
       </div>
     );
   } else {
